@@ -13,7 +13,7 @@
 # 1 <= a, b <= 1000
 
 def sum_a_and_b(a, b):
-    return a + b
+    return a + b  # queremos que esta funcion nos devuelva la suma de a y b.
 
 
 print(sum_a_and_b(2, 3))
