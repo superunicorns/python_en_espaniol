@@ -4,6 +4,7 @@
 # -----------------------------------------------------------------------
 # Parametros:
 # int ar[n]: arreglo de enteros
+# Salida:
 # long: la suma de los elementos del arreglo
 # -----------------------------------------------------------------------
 # Ejemplo:
