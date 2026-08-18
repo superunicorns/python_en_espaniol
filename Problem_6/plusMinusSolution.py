@@ -19,23 +19,29 @@
 # -100 <= arr[i] <= 100
 
 def plus_minus(arr):
-    n = len(arr)
-    count_positives = 0
-    count_negatives = 0
-    count_zero = 0
+    n = len(arr)  # el numero de elementos que hay en el arreglo
+    count_positives = 0  # una variable para contar cuantos elementos positivos hay
+    count_negatives = 0  # una variable para contar cuantos elementos negativos hay
+    count_zero = 0  # una variable para contar cuantos ceros hay
 
+    # por cada elemento dentro del arreglo
     for item in arr:
+        # si el elemento es mayor a cero
         if item > 0:
-            count_positives += 1
+            count_positives += 1  # incremento 1 a los positivos
+        # si el elemento es menor a cero
         elif item < 0:
-            count_negatives += 1
+            count_negatives += 1  # incremento 1 a los negativos
+        # si no es positivo ni negativo
         else:
-            count_zero += 1
+            count_zero += 1  # incremento 1 a los valores iguales a cero
 
+    # redondeo con la funcion round() y marco 6 lugares despues de la coma
     positives_ratio = round(count_positives / n, 6)
     negatives_ratio = round(count_negatives / n, 6)
     zero_ratio = round(count_zero / n, 6)
 
+    # imprimo los radios cada uno en una linea aparte
     print(positives_ratio)
     print(negatives_ratio)
     print(zero_ratio)
